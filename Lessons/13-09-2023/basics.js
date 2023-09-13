@@ -52,10 +52,50 @@ console.log(nameString("Märten"))
 
 const numberArray = [1, 2, 3, 4, 5]
 
-const newArray = numberArray.map(element => element + 5)
-// Tulemus: const numberArray = [6, 7, 8, 9, ...]
-console.log({ newArray })
+
+const newArray = numberArray.map((element, index, array) => {
+    console.log({
+        element,
+        newElement: element + 5,
+        index,
+        array
+    })
+
+    return element + 5
+})
+
+console.log(newArray)
 
 // Filter
+const filteredArray = numberArray.filter(element => element < 4)
 
-const filteredArray = numberArray.filter()
+console.log({numberArray, filteredArray})
+
+
+const names = ["Juku", "Mari", "Jaan", "Anni"]
+
+const data = names.map(name => {
+    return {
+        name,
+        age: name.length + 20,
+        email: name.toLowerCase() + "@company.com",
+        address: name + " Street 55",
+        username: name.split("").reverse().join(""),
+    }
+})
+
+console.log(data)
+
+const newJuku = {
+    ...data[0],
+    height: 175
+}
+
+console.log({ newJuku })
+
+const evenNewerJuku = {
+    ...newJuku,
+    age: 32
+}
+
+console.log({ evenNewerJuku })
