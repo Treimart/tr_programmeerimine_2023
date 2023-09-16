@@ -3,21 +3,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Main">
+      <h1>Märten Treier</h1>
+      <p>videomängud, dinosaurused, programmeerimine, 3D modeleerimine, video editing, animeerimine, näitlemiskunst, ettevõtlus, matemaatika, pedagoogika, optimiseerimine, level ja liidese disainimine</p>
+      <form>
+        <label for="name">Kasutajanimi: </label><br />
+        <input type="text" id="name" name="name"></input><br />
+        <label for="email">Meiliaadress: </label><br />
+        <input type="text" id="email" name="email"></input><br />
+        <label for="number">Üliõpilaskood: </label><br />
+        <input type="text" id="number" name="number"></input><br />
+        <input type="submit" value="Saada"/>
+      </form>
     </div>
   );
 }
