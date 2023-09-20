@@ -10,7 +10,8 @@ Async'i ja await'i kasutatakse siis, kui enne koodi (funktsiooni)
 algatamist on vaja mingi protsess (või ajavahemik) ära oodata.
 
 async - märksõna, mida kasutatakse funktsiooni liigi määramiseks,
-milles on await sees.
+milles on await sees. Ühesõnaga, midagi peab ootama.
+
 await - märksõna, mis on kasutusel, et käivitada mingi osa koodist
 peale seda, kui async'i osa on tehtud.
 */
@@ -29,6 +30,8 @@ delayedNotification();
 
 // Promise
 /*
+Bottom line: Promise lubab midagi
+
 Promise on JS'is objekt, mis tähistab mingisuguse asünkroonse
 protsessi läbiviimist (või läbikukkumist).
 Seda kasutades on võimalik edasi viia Promise'le järgnevaid
